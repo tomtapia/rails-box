@@ -43,17 +43,11 @@ Port 3000 in the host computer is forwarded to port 3000 in the virtual machine.
 
 * Bundler
 
-* SQLite3, MySQL, and Postgres
+* Postgres
 
 * Databases and users needed to run the Active Record test suite
 
-* System dependencies for nokogiri, sqlite3, mysql, mysql2, and pg
-
-* Memcached
-
-* Redis
-
-* RabbitMQ
+* System dependencies for nokogiri and pg
 
 * An ExecJS runtime
 
@@ -73,13 +67,13 @@ Just clone your Rails fork into the rails-dev-box directory on the host computer
 
 Vagrant mounts that directory as _/vagrant_ within the virtual machine:
 
-    vagrant@rails-dev-box:~$ ls /vagrant
+    vagrant@rails-box:~$ ls /vagrant
     bootstrap.sh MIT-LICENSE rails README.md Vagrantfile
 
 Install gem dependencies in there:
 
-    vagrant@rails-dev-box:~$ cd /vagrant/rails
-    vagrant@rails-dev-box:/vagrant/rails$ bundle
+    vagrant@rails-box:~$ cd /vagrant/rails
+    vagrant@rails-box:/vagrant/rails$ bundle
 
 We are ready to go to edit in the host, and test in the virtual machine.
 
