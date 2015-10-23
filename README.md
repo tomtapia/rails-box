@@ -1,10 +1,10 @@
-# A Virtual Machine for Ruby on Rails Core Development
+# Fork del Repositorio de Rails / rails-dev-box
 
 ## Introduction
 
-**Please note this VM is not designed for Rails application development, only Rails core development.**
-
-This project automates the setup of a development environment for working on Ruby on Rails itself. Use this virtual machine to work on a pull request with everything ready to hack and run the test suites.
+Esta es una modificacion del proyecto para iniciar una maquina virtual de desarrollo para aplicaciones rails con vagrant.
+Se actualizo la version de la maquina virtual desde ubuntu/trusty64 a hashicorp/precise64 con todas la modificaciones necesarias para tener
+un aplicativo rails corriendo en ella.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ This project automates the setup of a development environment for working on Rub
 Building the virtual machine is this easy:
 
     host $ git clone https://github.com/rails/rails-dev-box.git
-    host $ cd rails-dev-box
+    host $ cd rails-box
     host $ vagrant up
 
 That's it.
